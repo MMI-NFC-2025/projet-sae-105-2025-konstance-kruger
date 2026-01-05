@@ -1,0 +1,115 @@
+/* ========================================
+   PAGE HERO
+   ======================================== */
+
+.page-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.page-hero h2 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* ========================================
+   GALERIE INTRO
+   ======================================== */
+
+.gallery-intro {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gallery-wall img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+
+.gallery-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.gallery-description strong {
+  font-weight: 700;
+}
+
+/* ========================================
+   FILMS LIST
+   ======================================== */
+
+.films-list {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+}
+
+.film-item {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.film-item:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.film-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.film-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.film-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.film-link {
+  font-size: 14px;
+}
+
+.film-link a {
+  color: #0066cc;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.film-link a:hover {
+  color: #004499;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .page-hero h2 {
+    font-size: 48px;
+  }
+
+  .film-item {
+    padding: 20px;
+  }
+}

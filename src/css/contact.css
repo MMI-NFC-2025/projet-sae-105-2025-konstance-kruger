@@ -1,0 +1,94 @@
+/* ========================================
+   PAGE HERO
+   ======================================== */
+
+.page-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.page-hero h2 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   FORMULAIRE CONTACT
+   ======================================== */
+
+.contact-section {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .page-hero h2 {
+    font-size: 48px;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+}

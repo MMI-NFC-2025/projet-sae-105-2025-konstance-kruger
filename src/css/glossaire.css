@@ -1,0 +1,62 @@
+/* ========================================
+   PAGE HERO
+   ======================================== */
+
+.page-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.page-hero h2 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   GLOSSAIRE
+   ======================================== */
+
+.glossary {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+}
+
+.glossary-item {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.glossary-item:last-child {
+  border-bottom: none;
+}
+
+.glossary-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.glossary-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .page-hero h2 {
+    font-size: 48px;
+  }
+
+  .glossary {
+    padding: 20px;
+  }
+}

@@ -1,98 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hidden Reactions - Alice Ball</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Hidden Reactions - Effet Matilda</title>
+  
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/header.css" />
+  <link rel="stylesheet" href="src/css/index.css" />
+  <link rel="stylesheet" href="src/css/footer.css" />
 </head>
-<body>
-  <header>
-    <a href="/" class="logo">Hidden Reactions</a>
-    <div class="language-toggle">
-      <a href="#" class="active">EN</a>
-      <span> / </span>
-      <a href="#">FR</a>
-    </div>
-    <button class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
 
-  <nav class="menu-overlay" id="menuOverlay">
-    <ul>
-      <li><a href="/">Accueil</a></li>
-      <li><a href="/biographie.html">Biographie</a></li>
-      <li><a href="/memoires.html">Mémoires effacées</a></li>
-      <li><a href="/ecran.html">Écran invisible</a></li>
-    </ul>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-background">
-
-      <img alt="Portrait d'Alice Ball" src="portrait.avif" />
-    </div>
-    <div class="hero-content">
-      <h1>ALICE BALL</h1>
-      <p class="hero-subtitle">La bienfaitrice volé de son travail sans même le savoir</p>
-      <a href="#sections" class="cta-button">
-        <span>EN SAVOIR PLUS</span>
-        <div class="arrow-down">⌄</div>
+  <body>
+    <header>
+      <a href="/">
+        <h1 class="logo">Hidden Reactions</h1>
       </a>
-    </div>
-  </section>
-
-  <section id="sections" class="intro-sections">
-    <article class="section-card">
-      <a href="/biographie.html">
-        <div class="card-image-wrapper">
-          <div class="card-image">
-            <img alt="Portrait d'Alice Ball" src="biographie.avif" />
-          </div>
-          <div class="card-title">
-            <h2>BIOGRAPHIE</h2>
-          </div>
+      <div class="header-right">
+        <div class="lang-switch">
+          <a href="#" class="active">EN</a>
+          <span>/</span>
+          <a href="#">FR</a>
         </div>
-        <p>Découvrez l'histoire d'Alice Ball, chimiste pionnière dont la brillance fut longtemps oubliée.</p>
-      </a>
-    </article>
+        <button class="burger-menu" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">ACCUEIL</a></li>
+          <li><a href="/biographie.html">ALICE BALL</a></li>
+          <li><a href="/frise.html">> FRISE CHRONOLOGIQUE</a></li>
+          <li><a href="/litterature.html">LITTÉRATURE</a></li>
+          <li><a href="/cinema.html">CINÉMA</a></li>
+          <li><a href="/galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
+          <li><a href="/contact.html">PAGE DE CONTACT</a></li>
+          <li><a href="/apropos.html">À PROPOS</a></li>
+          <li><a href="/projets.html">AUTRES PROJETS</a></li>
+          <li><a href="/glossaire.html">GLOSSAIRE</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <article class="section-card">
-      <a href="/memoires.html">
-        <div class="card-image-wrapper">
-          <div class="card-image">
-            <img alt="Mémoires effacées" src="memoires.avif" />
-          </div>
-          <div class="card-title">
-            <h2>MÉMOIRES<br/>EFFACÉES</h2>
-          </div>
-        </div>
-        <p>Quand la plume devient gomme : comment la littérature scientifique a rendu hommage aux femmes de ses pages.</p>
-      </a>
-    </article>
+    <main>
+      <section class="hero">
+        <a href="#sections" class="scroll-down">
+          EN SAVOIR PLUS
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="white" stroke-width="2"/>
+          </svg>
+        </a>
+      </section>
 
-    <article class="section-card">
-      <a href="/ecran-invisible.html">
-        <div class="card-image-wrapper">
-          <div class="card-image">
-            <!-- ⚠️ REMPLACE PAR TON IMAGE -->
-            <img alt="Écran invisible" src="ecran-image.jpg" />
-          </div>
-          <div class="card-title">
-            <h2>ÉCRAN<br/>INVISIBLE</h2>
-          </div>
-        </div>
-        <p>Découvrez comment Hollywood et le cinéma mondial ont longtemps ignoré les héroïnes de la science.</p>
-      </a>
-    </article>
-  </section>
+      <section id="sections" class="section-circle">
+        <article>
+          <a href="/biographie.html">
+            <div class="circle-img">
+              <img
+                alt="Portrait d'Alice Ball"
+                src="assets/img/biographie.avif" />
+              <h3 class="circle-title">BIOGRAPHIE</h3>
+            </div>
+            <p class="circle-description">
+              Découvrez l'histoire d'Alice Ball,
+              <br />
+              chimiste pionnière dont la brillance fut
+              <br />
+              longtemps oubliée.
+            </p>
+          </a>
+        </article>
+      </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+      <section class="section-circle">
+        <article>
+          <a href="/litterature.html">
+            <div class="circle-img">
+              <img
+                alt="Livre et plume représentant les femmes dans la littérature"
+                src="/assets/img/memoires.avif" />
+              <h3 class="circle-title">
+                MÉMOIRES
+                <br />
+                EFFACÉES
+              </h3>
+            </div>
+            <p class="circle-description">
+              Quand la plume devient gomme :
+              <br />
+              comment la littérature scientifique a
+              <br />
+              rendu hommage aux femmes de ses
+              <br />
+              pages.
+            </p>
+          </a>
+        </article>
+      </section>
+
+      <section class="section-circle">
+        <article>
+          <a href="/cinema.html">
+            <div class="circle-img">
+              <img
+                alt="Pellicule de cinéma et silhouette de femme scientifique"
+                src="/assets/img/ecran.avif" />
+              <h3 class="circle-title">
+                ÉCRAN
+                <br />
+                INVISIBLE
+              </h3>
+            </div>
+            <p class="circle-description">
+              Découvrez comment Hollywood et le
+              <br />
+              cinéma mondial ont longtemps ignoré
+              <br />
+              les héroïnes de la science.
+            </p>
+          </a>
+        </article>
+      </section>
+    </main>

@@ -1,0 +1,119 @@
+/* ========================================
+   PAGE HERO
+   ======================================== */
+
+.page-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.page-hero h2 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtitle-box {
+  background-color: #e0e0e0;
+  padding: 15px 40px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.subtitle-box.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.subtitle-box p {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* ========================================
+   CONTENT SECTION
+   ======================================== */
+
+.content-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+}
+
+.content-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.content-section strong {
+  font-weight: 700;
+}
+
+.content-section em {
+  font-style: italic;
+}
+
+/* ========================================
+   FILM SECTION
+   ======================================== */
+
+.film-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.film-poster img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.film-images img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.film-description p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.film-credit {
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .page-hero h2 {
+    font-size: 48px;
+  }
+
+  .film-section {
+    grid-template-columns: 1fr;
+  }
+
+  .film-poster img {
+    max-width: 100%;
+  }
+}
