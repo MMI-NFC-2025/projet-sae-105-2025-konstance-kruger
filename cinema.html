@@ -2,13 +2,19 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <title>Écran Invisible - Cinéma | Hidden Reactions</title>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/cinema.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <a href="/">
+      <a href="index.html">
         <h1 class="logo">Hidden Reactions</h1>
       </a>
       <div class="header-right">
@@ -25,28 +31,37 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="/">ACCUEIL</a></li>
-          <li><a href="/biographie.html">ALICE BALL</a></li>
-          <li><a href="/frise.html">> FRISE CHRONOLOGIQUE</a></li>
-          <li><a href="/litterature.html">LITTÉRATURE</a></li>
-          <li><a href="/cinema.html">CINÉMA</a></li>
-          <li><a href="/galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
-          <li><a href="/contact.html">PAGE DE CONTACT</a></li>
-          <li><a href="/apropos.html">À PROPOS</a></li>
-          <li><a href="/projets.html">AUTRES PROJETS</a></li>
-          <li><a href="/glossaire.html">GLOSSAIRE</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="biographie.html">ALICE BALL</a></li>
+          <li><a href="frise.html">> FRISE CHRONOLOGIQUE</a></li>
+          <li><a href="litterature.html">LITTÉRATURE</a></li>
+          <li><a href="cinema.html">CINÉMA</a></li>
+          <li><a href="galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
+          <li><a href="contact.html">PAGE DE CONTACT</a></li>
+          <li><a href="apropos.html">À PROPOS</a></li>
+          <li><a href="projets.html">AUTRES PROJETS</a></li>
+          <li><a href="glossaire.html">GLOSSAIRE</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- Hero -->
       <section class="page-hero">
-        <h2>ÉCRAN INVISIBLE</h2>
-        <div class="subtitle-box dark">
-          <p>LES FEMMES DANS LE CINÉMA</p>
+        <h2>ÉCRAN<br />INVISIBLE</h2>
+        <div class="subtitle-box">
+          <p>LES FEMMES DANS<br />LE CINÉMA</p>
         </div>
       </section>
 
+      <!-- Image illustrative -->
+      <section class="hero-image">
+        <img
+          alt="Pellicule de cinéma avec silhouette de femme scientifique"
+          src="assets/img/cinema-hero.jpg" />
+      </section>
+
+      <!-- Texte d'introduction -->
       <section class="content-section">
         <p>
           L'effet Matilda s'est aussi glissé sur grand écran parfois sans qu'on s'en rende compte.
@@ -67,53 +82,36 @@
         </p>
       </section>
 
-      <section class="film-section">
-        <div class="film-poster">
-          <img
-            alt="Affiche du film Les Figures de l'ombre"
-            src="/assets/img/hidden-figures-poster.jpg" />
-        </div>
-        <div class="film-images">
-          <img
-            alt="Scène du film Les Figures de l'ombre"
-            src="/assets/img/hidden-figures-scene.jpg" />
-        </div>
-        <div class="film-description">
-          <p class="film-credit">Bande Annonce - Les Figures de l'ombre</p>
-          <p>
-            Le film <em>Les Figures de l'ombre</em> (<em>Hidden Figures</em>), réalisé par Theodore Melfi en
-            2016, raconte l'histoire vraie de trois <strong>femmes afro-américaines
-            extraordinaires</strong> : Katherine Johnson, Dorothy Vaughan et Mary Jackson. Dans les années 1960, en
-            pleine <strong>ségrégation raciale</strong> aux États-Unis, elles travaillent à la <strong>NASA</strong> et jouent un rôle
-            essentiel dans la réussite du programme spatial américain, notamment pour
-            envoyer l'astronaute John Glenn en orbite. Malgré leur intelligence
-            remarquable, elles doivent constamment affronter le <strong>racisme</strong> et le <strong>sexisme</strong> présents dans
-            leur environnement professionnel. Le film montre leur courage, leur détermination
-            et leur combat pour être reconnues à leur juste valeur.
-          </p>
-          <p>
-            À travers leurs parcours, Les Figures de l'ombre met en avant l'importance de
-            la diversité, de <strong>l'égalité des chances</strong> et du dépassement de soi. C'est une histoire
-            inspirante qui rappelle que la science et le progrès ne devraient jamais être
-            limités par la couleur de peau ou le genre, mais portés par le talent, la persévérance
-            et la passion.
-          </p>
-        </div>
-      </section>
-
+      <!-- Section Picture a Scientist -->
       <section class="film-section">
         <div class="film-poster">
           <img
             alt="Affiche du documentaire Picture a scientist"
-            src="/assets/img/picture-scientist-poster.jpg" />
+            src="assets/img/picture-scientist-poster.jpg" />
         </div>
-        <div class="film-images">
+
+        <div class="film-image">
           <img
             alt="Scène du documentaire Picture a scientist"
-            src="/assets/img/picture-scientist-scene.jpg" />
+            src="assets/img/picture-scientist-scene.jpg" />
         </div>
-        <div class="film-description">
+
+        <div class="film-content">
           <p class="film-credit">Bande Annonce - Picture a scientist</p>
+          
+          <!-- VIDÉO YOUTUBE 1 - À REMPLACER -->
+          <div class="video-container">
+            <iframe 
+              width="100%" 
+              height="200" 
+              src="https://www.youtube.com/embed/VIDEO_ID_1" 
+              title="Picture a scientist - Bande annonce" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
           <p>
             Le documentaire <em>Picture a Scientist</em>, réalisé par Ian Cheney et Sharon Shattuck, met en lumière les
             <strong>discriminations</strong> que subissent les femmes dans le milieu scientifique. À
@@ -136,8 +134,60 @@
           </p>
         </div>
       </section>
+
+      <!-- Section Les Figures de l'ombre -->
+      <section class="film-section">
+        <div class="film-poster">
+          <img
+            alt="Affiche du film Les Figures de l'ombre"
+            src="assets/img/hidden-figures-poster.jpg" />
+        </div>
+
+        <div class="film-image">
+          <img
+            alt="Scène du film Les Figures de l'ombre"
+            src="assets/img/hidden-figures-scene.jpg" />
+        </div>
+
+        <div class="film-content">
+          <p class="film-credit">Bande Annonce - Les Figures de l'ombre</p>
+          
+          <!-- VIDÉO YOUTUBE 2 - À REMPLACER -->
+          <div class="video-container">
+            <iframe 
+              width="100%" 
+              height="200" 
+              src="https://www.youtube.com/embed/VIDEO_ID_2" 
+              title="Les Figures de l'ombre - Bande annonce" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>
+            Le film <em>Les Figures de l'ombre</em> (<em>Hidden Figures</em>), réalisé par Theodore Melfi en
+            2016, raconte l'histoire vraie de trois <strong>femmes afro-américaines
+            extraordinaires</strong> : Katherine Johnson, Dorothy Vaughan et Mary Jackson. Dans les années 1960, en
+            pleine <strong>ségrégation raciale</strong> aux États-Unis, elles travaillent à la <strong>NASA</strong> et jouent un rôle
+            essentiel dans la réussite du programme spatial américain, notamment pour
+            envoyer l'astronaute John Glenn en orbite. Malgré leur intelligence
+            remarquable, elles doivent constamment affronter le <strong>racisme</strong> et le <strong>sexisme</strong> présents dans
+            leur environnement professionnel. Le film montre leur courage, leur détermination
+            et leur combat pour être reconnues à leur juste valeur.
+          </p>
+          <p>
+            À travers leurs parcours, Les Figures de l'ombre met en avant l'importance de
+            la diversité, de <strong>l'égalité des chances</strong> et du dépassement de soi. C'est une histoire
+            inspirante qui rappelle que la science et le progrès ne devraient jamais être
+            limités par la couleur de peau ou le genre, mais portés par le talent, la persévérance
+            et la passion.
+          </p>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p class="footer-text">
         Un projet pour sensibiliser sur l'effet Matilda
@@ -146,24 +196,19 @@
       </p>
       <nav>
         <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/biographie.html">Biographie</a></li>
-          <li><a href="/litterature.html">Littérature</a></li>
-          <li><a href="/cinema.html">Cinéma</a></li>
-        </ul>
-        <ul>
-          <li><a href="/frise.html">Frise chronologique</a></li>
-          <li><a href="/glossaire.html">Glossaire</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/apropos.html">À propos</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+          <li><a href="litterature.html">Littérature</a></li>
+          <li><a href="cinema.html">Cinéma</a></li>
+          <li><a href="frise.html">Frise</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
         </ul>
       </nav>
       <address>
         <p>Projet MMI - 2026</p>
-        <p><a href="mailto:contact@hiddenreactions.com">contact@hiddenreactions.com</a></p>
       </address>
     </footer>
 
-    <script src="/src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

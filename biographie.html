@@ -2,13 +2,19 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <title>Alice Ball - Biographie | Hidden Reactions</title>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/biographie.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <a href="/">
+      <a href="index.html">
         <h1 class="logo">Hidden Reactions</h1>
       </a>
       <div class="header-right">
@@ -25,47 +31,48 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="/">ACCUEIL</a></li>
-          <li><a href="/biographie.html">ALICE BALL</a></li>
-          <li><a href="/frise.html">> FRISE CHRONOLOGIQUE</a></li>
-          <li><a href="/litterature.html">LITTÉRATURE</a></li>
-          <li><a href="/cinema.html">CINÉMA</a></li>
-          <li><a href="/galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
-          <li><a href="/contact.html">PAGE DE CONTACT</a></li>
-          <li><a href="/apropos.html">À PROPOS</a></li>
-          <li><a href="/projets.html">AUTRES PROJETS</a></li>
-          <li><a href="/glossaire.html">GLOSSAIRE</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="biographie.html">ALICE BALL</a></li>
+          <li><a href="frise.html">> FRISE CHRONOLOGIQUE</a></li>
+          <li><a href="litterature.html">LITTÉRATURE</a></li>
+          <li><a href="cinema.html">CINÉMA</a></li>
+          <li><a href="galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
+          <li><a href="contact.html">PAGE DE CONTACT</a></li>
+          <li><a href="apropos.html">À PROPOS</a></li>
+          <li><a href="projets.html">AUTRES PROJETS</a></li>
+          <li><a href="glossaire.html">GLOSSAIRE</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- Hero -->
       <section class="page-hero">
         <h2>ALICE BALL</h2>
-        <p class="subtitle">BIOGRAPHIE</p>
+        <div class="subtitle">BIOGRAPHIE</div>
       </section>
 
-      <section class="bio-section">
+      <!-- Portrait + Infos -->
+      <section class="bio-intro">
         <div class="bio-portrait">
           <img
             alt="Portrait d'Alice Augusta Ball"
-            src="/assets/img/alice-portrait.jpg" />
+            src="assets/img/alice-portrait.jpg" />
         </div>
 
         <div class="bio-info">
-          <h3>ALICE AUGUSTA BALL</h3>
+          <h3>ALICE<br />AUGUSTA BALL</h3>
           <p class="bio-dates">24 juillet 1892 - 31 décembre 1916</p>
-          <p class="bio-title">Chimiste afro-américaine</p>
+          <p class="bio-profession">Chimiste afro-américaine</p>
           <p class="bio-description">
-            Connue pour avoir développé l'un des
-            <br />
-            traitements les plus efficaces contre
-            <br />
+            Connue pour avoir développé l'un des<br />
+            traitements les plus efficaces contre<br />
             la lèpre
           </p>
         </div>
       </section>
 
+      <!-- Sa Théorie -->
       <section class="content-section">
         <h3>SA THÉORIE</h3>
         <p>
@@ -79,8 +86,52 @@
           <strong>lèpre</strong>.
         </p>
       </section>
+
+      <!-- Le Problème -->
+      <section class="content-section">
+        <h3>LE PROBLÈME ?</h3>
+        <p>
+          Cette huile a un goût particulièrement amer et a des effets
+          secondaires puissants donc ce qui décourageait plus d'un patient.
+        </p>
+        <p>
+          Alice Ball met alors au point un procédé révolutionnaire : elle
+          parvient à isoler les <strong>esters éthyliques des acides gras</strong> de l'huile, les
+          rendant injectables et donc beaucoup plus efficaces et
+          tolérables. Malheureusement, elle meurt avant de pouvoir publier ses
+          résultats.
+        </p>
+      </section>
+
+      <!-- Sa Vulgarisation -->
+      <section class="content-section">
+        <h3>SA<br />VULGARISATION</h3>
+        <p>
+          Après sa disparition, Arthur L. Dean (un autre chimiste de l'université)
+          poursuit ses travaux et lance la production à grande échelle du
+          traitement.
+        </p>
+        <p>
+          En <strong>1918</strong>, un médecin hawaïen rapporte dans le "Journal of the
+          American Medical Association" que 78 patients ont pu quitter l'hôpital
+          de Kalihi après avoir reçu ces injections un véritable tournant dans
+          la lutte contre de la lèpre.
+        </p>
+        <p>
+          Alice Ball est considérée comme un <strong>exemple emblématique</strong> de l'effet
+          Mathilda à cause de la manière dont son travail a été minimisé et
+          attribué à un homme après sa mort, malgré son importance
+          scientifique.
+        </p>
+        <p>
+          Des décennies après, des chercheurs ont redécouvert ses travaux et
+          rétabli la vérité <strong>reconnaissant</strong> enfin qu'Alice Ball était la
+          véritable inventrice du procédé.
+        </p>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p class="footer-text">
         Un projet pour sensibiliser sur l'effet Matilda
@@ -89,24 +140,19 @@
       </p>
       <nav>
         <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/biographie.html">Biographie</a></li>
-          <li><a href="/litterature.html">Littérature</a></li>
-          <li><a href="/cinema.html">Cinéma</a></li>
-        </ul>
-        <ul>
-          <li><a href="/frise.html">Frise chronologique</a></li>
-          <li><a href="/glossaire.html">Glossaire</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/apropos.html">À propos</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+          <li><a href="litterature.html">Littérature</a></li>
+          <li><a href="cinema.html">Cinéma</a></li>
+          <li><a href="frise.html">Frise</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
         </ul>
       </nav>
       <address>
         <p>Projet MMI - 2026</p>
-        <p><a href="mailto:contact@hiddenreactions.com">contact@hiddenreactions.com</a></p>
       </address>
     </footer>
 
-    <script src="/src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

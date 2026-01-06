@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Hidden Reactions - Effet Matilda</title>
-  
-  <link rel="stylesheet" href="src/css/reset.css" />
-  <link rel="stylesheet" href="src/css/header.css" />
-  <link rel="stylesheet" href="src/css/index.css" />
-  <link rel="stylesheet" href="src/css/footer.css" />
-</head>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>Hidden Reactions - Effet Matilda</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
+  </head>
   <body>
+    <!-- Header -->
     <header>
-      <a href="/">
+      <a href="index.html">
         <h1 class="logo">Hidden Reactions</h1>
       </a>
       <div class="header-right">
@@ -30,22 +31,31 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="/">ACCUEIL</a></li>
-          <li><a href="/biographie.html">ALICE BALL</a></li>
-          <li><a href="/frise.html">> FRISE CHRONOLOGIQUE</a></li>
-          <li><a href="/litterature.html">LITTÉRATURE</a></li>
-          <li><a href="/cinema.html">CINÉMA</a></li>
-          <li><a href="/galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
-          <li><a href="/contact.html">PAGE DE CONTACT</a></li>
-          <li><a href="/apropos.html">À PROPOS</a></li>
-          <li><a href="/projets.html">AUTRES PROJETS</a></li>
-          <li><a href="/glossaire.html">GLOSSAIRE</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="biographie.html">ALICE BALL</a></li>
+          <li><a href="frise.html">> FRISE CHRONOLOGIQUE</a></li>
+          <li><a href="litterature.html">LITTÉRATURE</a></li>
+          <li><a href="cinema.html">CINÉMA</a></li>
+          <li><a href="galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
+          <li><a href="contact.html">PAGE DE CONTACT</a></li>
+          <li><a href="apropos.html">À PROPOS</a></li>
+          <li><a href="projets.html">AUTRES PROJETS</a></li>
+          <li><a href="glossaire.html">GLOSSAIRE</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- Hero Section -->
       <section class="hero">
+        <div class="hero-content">
+          <h2>ALICE BALL</h2>
+          <p class="hero-subtitle">
+            La bienfaitrice<br />
+            volé de son travail sans<br />
+            meme le savoir
+          </p>
+        </div>
         <a href="#sections" class="scroll-down">
           EN SAVOIR PLUS
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -54,73 +64,94 @@
         </a>
       </section>
 
+      <!-- Section Biographie -->
       <section id="sections" class="section-circle">
         <article>
-          <a href="/biographie.html">
+          <a href="biographie.html">
             <div class="circle-img">
               <img
                 alt="Portrait d'Alice Ball"
-                src="assets/img/biographie.avif" />
+                src="assets/img/bio-circle.jpg" />
               <h3 class="circle-title">BIOGRAPHIE</h3>
             </div>
             <p class="circle-description">
-              Découvrez l'histoire d'Alice Ball,
-              <br />
-              chimiste pionnière dont la brillance fut
-              <br />
+              Découvrez l'histoire d'Alice Ball,<br />
+              chimiste pionnière dont la brillance fut<br />
               longtemps oubliée.
             </p>
           </a>
         </article>
       </section>
 
+      <!-- Section Littérature -->
       <section class="section-circle">
         <article>
-          <a href="/litterature.html">
+          <a href="litterature.html">
             <div class="circle-img">
               <img
-                alt="Livre et plume représentant les femmes dans la littérature"
-                src="/assets/img/memoires.avif" />
+                alt="Livre et plume"
+                src="assets/img/litterature-circle.jpg" />
               <h3 class="circle-title">
-                MÉMOIRES
-                <br />
+                MÉMOIRES<br />
                 EFFACÉES
               </h3>
             </div>
             <p class="circle-description">
-              Quand la plume devient gomme :
-              <br />
-              comment la littérature scientifique a
-              <br />
-              rendu hommage aux femmes de ses
-              <br />
+              Quand la plume devient gomme :<br />
+              comment la littérature scientifique a<br />
+              rendu hommage aux femmes de ses<br />
               pages.
             </p>
           </a>
         </article>
       </section>
 
+      <!-- Section Cinéma -->
       <section class="section-circle">
         <article>
-          <a href="/cinema.html">
+          <a href="cinema.html">
             <div class="circle-img">
               <img
-                alt="Pellicule de cinéma et silhouette de femme scientifique"
-                src="/assets/img/ecran.avif" />
+                alt="Pellicule de cinéma"
+                src="assets/img/cinema-circle.jpg" />
               <h3 class="circle-title">
-                ÉCRAN
-                <br />
+                ÉCRAN<br />
                 INVISIBLE
               </h3>
             </div>
             <p class="circle-description">
-              Découvrez comment Hollywood et le
-              <br />
-              cinéma mondial ont longtemps ignoré
-              <br />
-              les héroïnes de la science.
+              Au cinéma aussi, les scientifiques<br />
+              ont longtemps été invisibles.<br />
+              Découvrez comment le 7e art répare<br />
+              cette injustice.
             </p>
           </a>
         </article>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        Un projet pour sensibiliser sur l'effet Matilda
+        <br />
+        et la place des <span>femmes en sciences</span>.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+          <li><a href="litterature.html">Littérature</a></li>
+          <li><a href="cinema.html">Cinéma</a></li>
+          <li><a href="frise.html">Frise</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+      </nav>
+      <address>
+        <p>Projet MMI - 2026</p>
+      </address>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

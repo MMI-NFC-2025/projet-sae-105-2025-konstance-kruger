@@ -2,13 +2,19 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <title>Mémoires Effacées - Littérature | Hidden Reactions</title>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/litterature.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <a href="/">
+      <a href="index.html">
         <h1 class="logo">Hidden Reactions</h1>
       </a>
       <div class="header-right">
@@ -25,28 +31,37 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="/">ACCUEIL</a></li>
-          <li><a href="/biographie.html">ALICE BALL</a></li>
-          <li><a href="/frise.html">> FRISE CHRONOLOGIQUE</a></li>
-          <li><a href="/litterature.html">LITTÉRATURE</a></li>
-          <li><a href="/cinema.html">CINÉMA</a></li>
-          <li><a href="/galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
-          <li><a href="/contact.html">PAGE DE CONTACT</a></li>
-          <li><a href="/apropos.html">À PROPOS</a></li>
-          <li><a href="/projets.html">AUTRES PROJETS</a></li>
-          <li><a href="/glossaire.html">GLOSSAIRE</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="biographie.html">ALICE BALL</a></li>
+          <li><a href="frise.html">> FRISE CHRONOLOGIQUE</a></li>
+          <li><a href="litterature.html">LITTÉRATURE</a></li>
+          <li><a href="cinema.html">CINÉMA</a></li>
+          <li><a href="galerie.html">> GALERIE CINÉMATOGRAPHIQUE</a></li>
+          <li><a href="contact.html">PAGE DE CONTACT</a></li>
+          <li><a href="apropos.html">À PROPOS</a></li>
+          <li><a href="projets.html">AUTRES PROJETS</a></li>
+          <li><a href="glossaire.html">GLOSSAIRE</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- Hero -->
       <section class="page-hero">
-        <h2>MÉMOIRES EFFACÉES</h2>
+        <h2>MÉMOIRES<br />EFFACÉES</h2>
         <div class="subtitle-box">
-          <p>LES FEMMES DANS LA LITTÉRATURE</p>
+          <p>LES FEMMES DANS<br />LA LITTÉRATURE</p>
         </div>
       </section>
 
+      <!-- Image illustrative -->
+      <section class="hero-image">
+        <img
+          alt="Livre ancien avec plume et encrier"
+          src="assets/img/litterature-book.jpg" />
+      </section>
+
+      <!-- Texte d'introduction -->
       <section class="content-section">
         <p>
           Peu de romans ont célébré les chercheuses, les inventrices, celles qui
@@ -68,16 +83,18 @@
         </p>
       </section>
 
+      <!-- Section livre Hidden Figures -->
       <section class="book-section">
         <div class="book-cover">
           <img
             alt="Couverture du livre Hidden Figures"
-            src="/assets/img/hidden-figures-book.jpg" />
+            src="assets/img/hidden-figures-book.jpg" />
         </div>
-        <div class="book-description">
+
+        <div class="book-content">
           <p>
             Le livre raconte l'histoire vraie de trois femmes afro-américaines : Katherine
-            Johnson, Mary Jackson et Dorothy Vaughan, qui ont travaillé pour
+            Johnson, Dorothy Vaughan et Mary Jackson, qui ont travaillé pour
             la <strong>NASA</strong> dans les années <strong>1950-60</strong>.
           </p>
           <p>
@@ -98,6 +115,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p class="footer-text">
         Un projet pour sensibiliser sur l'effet Matilda
@@ -106,24 +124,19 @@
       </p>
       <nav>
         <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/biographie.html">Biographie</a></li>
-          <li><a href="/litterature.html">Littérature</a></li>
-          <li><a href="/cinema.html">Cinéma</a></li>
-        </ul>
-        <ul>
-          <li><a href="/frise.html">Frise chronologique</a></li>
-          <li><a href="/glossaire.html">Glossaire</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/apropos.html">À propos</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+          <li><a href="litterature.html">Littérature</a></li>
+          <li><a href="cinema.html">Cinéma</a></li>
+          <li><a href="frise.html">Frise</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
         </ul>
       </nav>
       <address>
         <p>Projet MMI - 2026</p>
-        <p><a href="mailto:contact@hiddenreactions.com">contact@hiddenreactions.com</a></p>
       </address>
     </footer>
 
-    <script src="/src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
   </body>
 </html>
