@@ -3,122 +3,151 @@
    ======================================== */
 
 .page-hero {
-  padding: 100px 20px 60px;
+  padding: 100px 20px 30px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .page-hero h2 {
-  font-size: 72px;
+  font-family: 'Imbue', serif;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 .subtitle-box {
-  background-color: #e0e0e0;
-  padding: 15px 40px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.subtitle-box.dark {
   background-color: #333;
   color: #fff;
+  padding: 10px 18px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .subtitle-box p {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1.3;
   margin: 0;
 }
 
 /* ========================================
-   FRISE CHRONOLOGIQUE
+   TIMELINE - Design en Zigzag
    ======================================== */
 
 .timeline {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px 20px;
-  position: relative;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #ddd;
-  transform: translateX(-50%);
+  padding: 50px 0 60px;
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto;
 }
 
 .timeline-item {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 60px;
   position: relative;
+  padding: 0 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.timeline-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
+/* Portrait circulaire */
 .timeline-portrait {
-  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
 }
 
 .timeline-portrait img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.timeline-content {
-  background-color: #f9f9f9;
-  padding: 20px 30px;
-  border-radius: 10px;
-  flex: 1;
+/* Informations */
+.timeline-info {
+  text-align: center;
+  max-width: 280px;
 }
 
-.timeline-content h3 {
-  font-size: 22px;
+.timeline-info h3 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  color: #000;
+  line-height: 1.3;
 }
 
-.timeline-content p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #555;
+.timeline-info p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
+/* Connecteur (ligne courbe) */
+.timeline-connector {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+  border-top: none;
+  border-right: none;
+  border-radius: 0 0 0 30px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
 
-@media (max-width: 768px) {
-  .page-hero h2 {
-    font-size: 48px;
-  }
+/* Alternance gauche/droite */
+.timeline-item:nth-child(odd) .timeline-connector {
+  left: 30%;
+  border-left: none;
+  border-right: 2px solid #ddd;
+  border-radius: 0 0 30px 0;
+}
 
-  .timeline::before {
-    left: 30px;
-  }
+.timeline-item:nth-child(even) .timeline-connector {
+  left: 70%;
+  border-right: none;
+  border-left: 2px solid #ddd;
+  border-radius: 0 0 0 30px;
+}
 
-  .timeline-item {
-    flex-direction: column !important;
-    padding-left: 80px;
-  }
+/* Dernier connecteur */
+.timeline-connector.last {
+  display: none;
+}
 
-  .timeline-portrait img {
-    width: 150px;
-    height: 150px;
-  }
+/* Alice Ball en surbrillance */
+.timeline-item.highlight .timeline-portrait img {
+  border: 4px solid #000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  width: 150px;
+  height: 150px;
+}
+
+.timeline-item.highlight .timeline-portrait {
+  width: 150px;
+  height: 150px;
+}
+
+.timeline-item.highlight .timeline-info h3 {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.timeline-item.highlight .timeline-connector {
+  border-color: #000;
 }

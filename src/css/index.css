@@ -34,7 +34,7 @@
 }
 
 .hero h2 {
-  font-family: 'Imbue', serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 64px;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -43,7 +43,7 @@
 }
 
 .hero-subtitle {
-  font-family: 'Imbue', serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
@@ -124,7 +124,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Imbue', serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 36px;
   font-weight: 700;
   text-align: center;

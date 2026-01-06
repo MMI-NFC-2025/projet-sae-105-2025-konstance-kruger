@@ -9,30 +9,27 @@ header {
   right: 0;
   width: 100%;
   background-color: #fff;
-  padding: 20px 40px;
+  padding: 20px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .logo {
-  font-size: 24px;
+  font-family: 'Imbue', serif;
+  font-size: 22px;
   font-weight: 400;
   color: #000;
-  transition: color 0.3s ease;
-}
-
-.logo:hover {
-  color: #666;
+  font-style: italic;
 }
 
 /* Header Right (Language + Burger) */
 .header-right {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
 /* Language Switcher */
@@ -40,18 +37,16 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .lang-switch a {
   color: #000;
-  transition: opacity 0.3s ease;
 }
 
-.lang-switch a:hover,
 .lang-switch a.active {
-  opacity: 0.6;
+  text-decoration: underline;
 }
 
 .lang-switch span {
@@ -63,8 +58,8 @@ header {
    ======================================== */
 
 .burger-menu {
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 24px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -78,7 +73,7 @@ header {
 
 .burger-menu span {
   width: 100%;
-  height: 3px;
+  height: 2.5px;
   background-color: #000;
   transition: all 0.3s ease;
   border-radius: 2px;
@@ -86,7 +81,7 @@ header {
 
 /* Animation du burger en X */
 .burger-menu.open span:nth-child(1) {
-  transform: rotate(45deg) translate(9px, 9px);
+  transform: rotate(45deg) translate(7px, 7px);
 }
 
 .burger-menu.open span:nth-child(2) {
@@ -94,22 +89,25 @@ header {
 }
 
 .burger-menu.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(9px, -9px);
+  transform: rotate(-45deg) translate(8px, -8px);
 }
 
-/* Navigation Menu (caché par défaut) */
+/* ========================================
+   NAVIGATION MENU
+   ======================================== */
+
 .main-nav {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 400px;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
-  padding: 100px 40px 40px;
+  padding: 80px 30px 40px;
   transition: right 0.4s ease;
   overflow-y: auto;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  border-left: 1px solid #e0e0e0;
 }
 
 .main-nav.open {
@@ -118,11 +116,13 @@ header {
 
 .main-nav ul {
   list-style: none;
-  margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav ul li {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .main-nav ul li a {
@@ -130,32 +130,14 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
-  transition: opacity 0.3s ease;
   letter-spacing: 0.05em;
+  display: block;
+  padding: 20px 0;
 }
 
-.main-nav ul li a:hover {
-  opacity: 0.6;
-}
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
-@media (max-width: 768px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
-  .main-nav {
-    width: 100%;
-  }
-
-  .header-right {
-    gap: 20px;
-  }
+/* Style pour les sous-items (avec >) */
+.main-nav ul li a[href*="frise"],
+.main-nav ul li a[href*="galerie"] {
+  padding-left: 20px;
+  font-size: 14px;
 }
