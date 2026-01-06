@@ -9,8 +9,8 @@
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', serif;
-  font-size: 48px;
+  font-family: 'Imbue', sans-serif;
+  font-size: 45px;
   font-weight: 700;
   margin-bottom: 40px;
   letter-spacing: 0.02em;
@@ -27,11 +27,11 @@
 }
 
 .subtitle-box p {
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  line-height: 1.5;
+  line-height: 2;
   margin: 0;
 }
 

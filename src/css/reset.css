@@ -48,6 +48,10 @@ h2,
   font-family: 'Imbue', serif;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 400;

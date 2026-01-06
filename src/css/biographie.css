@@ -11,7 +11,7 @@
 .page-hero h2 {
   font-family: 'Imbue', serif;
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
 }
 
 .bio-portrait {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .bio-portrait img {
