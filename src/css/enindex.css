@@ -1,0 +1,124 @@
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-down:hover {
+  opacity: 0.7;
+}
+
+.scroll-down svg {
+  animation: bounce 2s infinite;
+}
+
+/* ========================================
+   SECTIONS AVEC CERCLES
+   ======================================== */
+
+.section-circle {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section-circle article a {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.section-circle article a:hover {
+  transform: scale(1.02);
+}
+
+.circle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 25px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.circle-img img {
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+}
+
+.circle-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.1;
+}
+
+.circle-description {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 320px;
+  margin: 0 auto;
+}
