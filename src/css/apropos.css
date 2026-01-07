@@ -3,53 +3,47 @@
    ======================================== */
 
 .page-hero {
-  padding: 100px 40px 60px;
+  padding: 100px 20px 40px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .page-hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 72px;
+  font-family: 'Imbue', serif;
+  font-size: 56px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 /* ========================================
-   À PROPOS SECTION
+   CONTENU À PROPOS
    ======================================== */
 
+.about-content {
+  padding: 30px 25px 60px;
+  max-width: 393px;
+  margin: 0 auto;
+}
+
 .about-section {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px 30px;
-  line-height: 1.8;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
 }
 
 .about-section p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: left;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #000;
+  text-align: justify;
 }
 
 .about-section strong {
   font-weight: 700;
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
-@media (max-width: 768px) {
-  .page-hero h2 {
-    font-size: 48px;
-  }
-
-  .about-section {
-    padding: 20px;
-  }
+/* Dernier paragraphe */
+.about-section:last-child {
+  margin-bottom: 0;
 }

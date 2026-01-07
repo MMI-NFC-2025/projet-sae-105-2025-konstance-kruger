@@ -3,117 +3,115 @@
    ======================================== */
 
 .page-hero {
-  padding: 100px 40px 60px;
+  padding: 100px 20px 30px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .page-hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 72px;
+  font-family: 'Imbue', serif;
+  font-size: 34px;
   font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin-bottom: 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
 }
 
 /* ========================================
-   GALERIE INTRO
+   HERO IMAGE
+   ======================================== */
+
+.hero-image {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+/* ========================================
+   GALLERY INTRO
    ======================================== */
 
 .gallery-intro {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px 30px;
-  text-align: left;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 25px 40px;
+  line-height: 1.7;
 }
 
-.gallery-wall img {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  border-radius: 10px;
+.gallery-intro p {
+  font-size: 15px;
+  margin-bottom: 18px;
+  color: #000;
+  line-height: 1.65;
+  text-align: justify;
 }
 
-.gallery-description {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.gallery-description strong {
+.gallery-intro strong {
   font-weight: 700;
 }
 
 /* ========================================
-   FILMS LIST
+   FILM CARDS
    ======================================== */
 
-.films-list {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px 20px;
-}
-
-.film-item {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
+.film-card {
+  padding: 25px 25px 30px;
   margin-bottom: 30px;
-  transition: box-shadow 0.3s ease;
+  border-bottom: 2px solid #f0f0f0;
 }
 
-.film-item:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+.film-card:last-of-type {
+  border-bottom: none;
+  margin-bottom: 50px;
 }
 
-.film-item h3 {
-  font-size: 24px;
+.film-card h3 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  color: #000;
+  text-decoration: underline;
+  line-height: 1.3;
 }
 
 .film-type {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  color: #666;
-  margin-bottom: 15px;
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #555;
 }
 
 .film-description {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
   margin-bottom: 15px;
+  color: #333;
+  text-align: justify;
 }
 
 .film-link {
-  font-size: 14px;
+  font-size: 13px;
+  color: #000;
+}
+
+.film-link strong {
+  font-weight: 700;
 }
 
 .film-link a {
-  color: #0066cc;
+  color: #000;
   text-decoration: underline;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
 }
 
 .film-link a:hover {
-  color: #004499;
-}
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
-@media (max-width: 768px) {
-  .page-hero h2 {
-    font-size: 48px;
-  }
-
-  .film-item {
-    padding: 20px;
-  }
+  opacity: 0.6;
 }
