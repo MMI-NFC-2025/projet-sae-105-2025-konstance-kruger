@@ -3,13 +3,13 @@
    ======================================== */
 
 .page-hero {
-  padding: 100px 20px 30px;
+  padding: 50px 20px 30px;
   text-align: center;
   background-color: #fff;
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -67,14 +67,14 @@
 
 .bio-dates {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 100;
   margin-bottom: 8px;
   color: #000;
 }
 
 .bio-profession {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 100;
   margin-bottom: 12px;
   color: #000;
 }
@@ -83,7 +83,7 @@
   font-size: 15px;
   line-height: 1.5;
   color: #000;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 /* ========================================
@@ -91,7 +91,7 @@
    ======================================== */
 
 .content-section {
-  padding: 30px 20px;
+  padding: 30px 15px;
   line-height: 1.7;
 }
 
@@ -105,10 +105,11 @@
 }
 
 .content-section p {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 18px;
   color: #000;
   line-height: 1.6;
+  text-align: left;
 }
 
 .content-section strong {

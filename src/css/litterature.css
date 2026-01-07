@@ -9,7 +9,7 @@
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -57,7 +57,7 @@
    ======================================== */
 
 .content-section {
-  padding: 30px 25px;
+  padding: 30px 15px;
   line-height: 1.7;
 }
 
@@ -99,11 +99,11 @@
 }
 
 .book-content p {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 18px;
   color: #000;
   line-height: 1.65;
-  text-align: justify;
+  text-align: left;
 }
 
 .book-content strong {

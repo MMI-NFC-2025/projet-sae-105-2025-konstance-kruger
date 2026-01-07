@@ -3,16 +3,19 @@
    ======================================== */
 
 .page-hero {
-  padding: 100px 20px 60px;
+  padding: 100px 20px 40px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', serif;
-  font-size: 72px;
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
 }
 
 /* ========================================
@@ -20,16 +23,16 @@
    ======================================== */
 
 .contact-section {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 40px 20px;
+  max-width: 350px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
 }
 
 .contact-form {
-  background-color: #f9f9f9;
-  padding: 40px;
+  background-color: #fff;
+  padding: 35px 25px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
 }
 
 .form-group {
@@ -38,7 +41,7 @@
 
 .form-group label {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
   color: #000;
@@ -48,48 +51,57 @@
 .form-group textarea {
   width: 100%;
   padding: 12px 15px;
-  font-size: 15px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #fff;
-  transition: border-color 0.3s ease;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: #000;
+  background-color: #fff;
 }
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ========================================
+   BOUTON ENVOYER
+   ======================================== */
 
 .submit-btn {
   width: 100%;
   padding: 15px;
-  background-color: #333;
+  background-color: #666;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
   background-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
-@media (max-width: 768px) {
-  .page-hero h2 {
-    font-size: 48px;
-  }
-
-  .contact-form {
-    padding: 30px 20px;
-  }
+.submit-btn:active {
+  transform: translateY(0);
 }

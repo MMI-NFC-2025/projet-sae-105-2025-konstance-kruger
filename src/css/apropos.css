@@ -9,7 +9,7 @@
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 72px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -22,7 +22,7 @@
 .about-section {
   max-width: 900px;
   margin: 60px auto;
-  padding: 40px 20px;
+  padding: 40px 15px;
   line-height: 1.8;
 }
 
@@ -30,6 +30,7 @@
   font-size: 16px;
   margin-bottom: 20px;
   color: #333;
+  text-align: left;
 }
 
 .about-section strong {

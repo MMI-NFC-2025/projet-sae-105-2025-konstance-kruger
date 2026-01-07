@@ -9,7 +9,7 @@
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 72px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -23,8 +23,8 @@
 .gallery-intro {
   max-width: 900px;
   margin: 60px auto;
-  padding: 40px 20px;
-  text-align: center;
+  padding: 40px 15px;
+  text-align: left;
 }
 
 .gallery-wall img {

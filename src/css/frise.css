@@ -3,35 +3,37 @@
    ======================================== */
 
 .page-hero {
-  padding: 100px 20px 30px;
+  padding: 80px 40px 40px;
   text-align: center;
   background-color: #fff;
 }
 
 .page-hero h2 {
-  font-family: 'Imbue', sans-serif;
-  font-size: 45px;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 40px;
-  letter-spacing: 0.02em;
+  margin-bottom: 25px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  line-height: 1;
 }
 
 .subtitle-box {
-  background-color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #000;
   color: #fff;
-  padding: 5px 25px;
+  padding: 8px 25px;
   display: inline-block;
-  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .subtitle-box p {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  line-height: 2;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -79,7 +81,7 @@
 }
 
 .timeline-info h3 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 700;
   margin-bottom: 8px;
