@@ -13,12 +13,13 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif;
   line-height: 1.7;
   color: #000;
   background-color: #fff;
   font-size: 16px;
   letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 a {
@@ -40,14 +41,14 @@ img {
    TYPOGRAPHY - Police Imbue
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .logo,
 h1,
 h2,
 .hero h2,
 .hero-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 h2 {
