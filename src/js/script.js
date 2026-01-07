@@ -16,3 +16,19 @@ navLinks.forEach(link => {
     mainNav.classList.remove('open');
   });
 });
+
+// GLOSSAIRE ACCORDION
+const glossaryItems = document.querySelectorAll('.glossary-item');
+
+glossaryItems.forEach(item => {
+  item.addEventListener('toggle', () => {
+    if (item.open) {
+      // Fermer les autres
+      glossaryItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.open = false;
+        }
+      });
+    }
+  });
+});

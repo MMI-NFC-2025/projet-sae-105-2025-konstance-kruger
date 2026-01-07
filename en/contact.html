@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <title>Autres Projets | Hidden Reactions</title>
+    <title>Contact | Hidden Reactions</title>
     
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/header.css" />
-    <link rel="stylesheet" href="src/css/projets.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
     <link rel="stylesheet" href="src/css/footer.css" />
   </head>
   <body>
@@ -48,71 +48,60 @@
     <main>
       <!-- Hero -->
       <section class="page-hero">
-        <h2>AUTRES<br />PROJETS</h2>
+        <h2>EN CAS DE<br />QUESTIONS ?</h2>
       </section>
 
-      <!-- Liste des projets -->
-      <section class="projects-list">
-        
-        <!-- Groupe 1 -->
-        <div class="project-item">
-          <a href="https://laia-brouart-margaret-hamilton.com" target="_blank" rel="noopener">
-            Laïa BROUART Margaret Hamilton
-          </a>
-        </div>
+      <!-- Formulaire de contact -->
+      <section class="contact-section">
+        <form class="contact-form" action="#" method="POST">
+          
+          <!-- Nom -->
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input 
+              type="text" 
+              id="nom" 
+              name="nom" 
+              placeholder="Texte..." 
+              required />
+          </div>
 
-        <div class="project-item">
-          <a href="https://araldi-theo-adn-franklin.com" target="_blank" rel="noopener">
-            Araldi Théo ADN Franklin
-          </a>
-        </div>
+          <!-- Mail -->
+          <div class="form-group">
+            <label for="email">Mail :</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Texte..." 
+              required />
+          </div>
 
-        <div class="project-item">
-          <a href="https://derroo-valentin.com" target="_blank" rel="noopener">
-            Derroo Valentin
-          </a>
-        </div>
+          <!-- Sujet -->
+          <div class="form-group">
+            <label for="sujet">Sujet :</label>
+            <input 
+              type="text" 
+              id="sujet" 
+              name="sujet" 
+              placeholder="Texte..." 
+              required />
+          </div>
 
-        <div class="project-item">
-          <a href="https://matheo-girardin-lise-meitner.com" target="_blank" rel="noopener">
-            Mathéo Girardin TarkýLise Meitner
-          </a>
-        </div>
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6" 
+              placeholder="Texte..." 
+              required></textarea>
+          </div>
 
-        <div class="project-item">
-          <a href="https://sacha-martin-chien-shiung-wu.com" target="_blank" rel="noopener">
-            Sacha Martin Chien Shiung Wu
-          </a>
-        </div>
-
-        <!-- Espace -->
-        <div class="project-spacer"></div>
-
-        <!-- Groupe 2 -->
-        <div class="project-item">
-          <a href="https://matthis-carnicer-lumiere-elles.com" target="_blank" rel="noopener">
-            Matthis Carnicer Lumière sur Elles
-          </a>
-        </div>
-
-        <div class="project-item">
-          <a href="https://mael-brungard-matilda-presse.com" target="_blank" rel="noopener">
-            Maël BRUNGARD Matilda Presse
-          </a>
-        </div>
-
-        <div class="project-item">
-          <a href="https://mathis-desarches.com" target="_blank" rel="noopener">
-            Mathis DESARCHES
-          </a>
-        </div>
-
-        <div class="project-item">
-          <a href="https://solene-projet.com" target="_blank" rel="noopener">
-            Solène
-          </a>
-        </div>
-
+          <!-- Bouton Envoyer -->
+          <button type="submit" class="submit-btn">ENVOYER</button>
+        </form>
       </section>
     </main>
 
@@ -129,17 +118,13 @@
         <a href="mailto:konstance.kruger@edu.univ-fcomte.fr">Me contacter</a>
       </div>
 
+
       <!-- Mentions légales -->
       <div class="footer-legal">
         <p>
           Projet réalisé en 2025 dans le cadre d'un exercice<br />
           pédagogique au département <a href="http://mmimontbeliard.com/" target="_blank" rel="noopener">MMI de Montbéliard</a>
         </p>
-      </div>
-
-      <!-- Copyright -->
-      <div class="footer-copyright">
-        <p>© 2025 Konstance Kruger - Tous droits réservés</p>
       </div>
     </footer>
 
